@@ -2,9 +2,22 @@
 // esto solo se ejecuta en el desarollo, no en produccion
 
 const title = "Mi proyecto de Astro!!!";
+const color = "warning";
+
+const hobbies = ["programar", "leer", "escribir", "ver peliculas"];
+
+const isActive = false;
 ---
 
-<h1 class="title">{title}</h1>
+<ul>
+  {
+    hobbies.map((item) => {
+      return <li> {item} </li>;
+    })
+  }
+</ul>
+
+<h3 class="warning">{isActive && "El usuario esta activo"}</h3>
 
 <script>
   console.log("Hello world");
@@ -17,5 +30,11 @@ const title = "Mi proyecto de Astro!!!";
   }
   .title {
     color: skyblue;
+  }
+  .danger {
+    color: red;
+  }
+  .warning {
+    color: yellow;
   }
 </style>
