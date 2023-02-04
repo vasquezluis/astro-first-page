@@ -1,2 +1,39 @@
-<h1>mis servicios</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quo non vero eveniet quidem similique cum sit libero blanditiis doloremque!</p>
+---
+import Card from "../components/card.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios</title>
+  </head>
+  <body>
+    <h1>mis servicios</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quo non
+      vero eveniet quidem similique cum sit libero blanditiis doloremque!
+    </p>
+
+    <Card title="Hola mundo" content="Esta es una prueba" />
+    <Card
+      title="Programacion"
+      content="Servicios de desarrollo de aplicaciones"
+    />
+    <Card title="Diseño" content="Diseño de interfaces web" />
+    <Card
+      title="Asistencia profesional"
+      content="Ofrecemos asistencia profesional"
+    />
+    <Card />
+
+    <style>
+      body {
+        background: #202020;
+        color: white;
+      }
+    </style>
+  </body>
+</html>
