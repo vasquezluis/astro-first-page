@@ -1,18 +1,25 @@
 ---
-// esto solo se ejecuta en el desarollo, no en produccion
+// * esto solo se ejecuta en el desarollo, no en produccion
 
 const title = "Mi proyecto de Astro!!!";
 const color = "warning";
 
 const hobbies = ["programar", "leer", "escribir", "ver peliculas"];
 
-const isActive = false;
+const isActive = true;
 ---
+
+<h1>{title}</h1>
 
 <ul>
   {
     hobbies.map((item) => {
-      return <li> {item} </li>;
+      return (
+        <li>
+          {" "}
+          <h3>{item}</h3> <button>Like</button>{" "}
+        </li>
+      );
     })
   }
 </ul>
