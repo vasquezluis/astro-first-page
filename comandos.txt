@@ -1,0 +1,8 @@
+# 1 create astro project using npm
+  npm create astro
+
+# 2 for example - TypeScript setup
+  relaxed
+
+# 3 install astro extension 
+
